@@ -1,0 +1,22 @@
+[project]
+name = "langchain-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12.3"
+dependencies = [
+    "langchain>=1.2.3",
+    "langchain-anthropic>=1.3.1",
+    "langchain-google-genai>=4.1.3",
+    "langchain-google-vertexai>=3.2.1",
+    "langchain-openai>=1.1.7",
+    "openai>=2.15.0",
+    "python-dotenv>=1.2.1",
+]
+
+[project.scripts]
+langchain-python = "langchain_python:main"
+
+[build-system]
+requires = ["uv_build>=0.9.21,<0.10.0"]
+build-backend = "uv_build"
